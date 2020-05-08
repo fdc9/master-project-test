@@ -1,0 +1,3 @@
+[submodule "sources/MasterTestApp/src/app/features"]
+	path = sources/MasterTestApp/src/app/features
+	url = git@github.com:fdc9/submodule-project-test.git
