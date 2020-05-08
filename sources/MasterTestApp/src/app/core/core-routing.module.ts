@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { Routes, RouterModule } from '@angular/router';
+import { Routes, RouterModule, PreloadAllModules } from '@angular/router';
 import { DashboardComponent } from './pages/dashboard/dashboard.component';
 
 export const routes: Routes = [
@@ -12,6 +12,10 @@ export const routes: Routes = [
   {
     path: 'dashboard',
     component: DashboardComponent
+  },
+  {
+    path: 'first',
+    loadChildren: () => import('../features/first/first.module').then(mod => mod.FirstModule)
   }
 ]
 
@@ -19,7 +23,9 @@ export const routes: Routes = [
   declarations: [],
   imports: [
     CommonModule,
-    RouterModule.forRoot(routes)],
-  exports: [RouterModule]
+    RouterModule.forRoot(routes, {
+      preloadingStrategy: PreloadAllModules
+    })],
+    exports: [RouterModule]
 })
 export class CoreRoutingModule { }
