@@ -1,3 +1,4 @@
 [submodule "sources/MasterTestApp/src/app/features/first"]
 	path = sources/MasterTestApp/src/app/features/first
 	url = git@github.com:fdc9/submodule-project-test.git
+	branch = master
