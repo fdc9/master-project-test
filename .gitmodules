@@ -1,3 +1,0 @@
-[submodule "src/app/features/first"]
-	path = src/app/features/first
-	url = git@github.com:fdc9/submodule-project-test.git
