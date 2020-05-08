@@ -1,0 +1,3 @@
+[submodule "src/app/features/first"]
+	path = src/app/features/first
+	url = https://github.com/fdc9/submodule-project-test
